@@ -1,0 +1,451 @@
+:root{
+    
+    /*PROJECT COLORS*/
+    --green-color: #8AE025;
+    --red-color: #F34220;
+    --white-color: #F8F8F8;
+    --grey-light-color: #DFDFDF;
+    --grey-medium-color: #666;
+    ---grey-dark-color: #333;
+
+    /*PROJECT FONT-FAMILY*/
+    --font-Barlow: 'Barlow', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Barlow', sans-serif;
+    background-color: var(--grey-light-color);
+}
+
+h2{
+    color: var(--red-color);
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+}
+
+h3{
+    color: var(--green-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+p{
+    color: var(--grey-medium-color);
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+a{
+    color: var(--red-color);
+}
+
+
+
+/*MOBILE SIZE SETTINGS START*/
+
+/*HEADER START*/
+.top-menu-mobile{
+    background-color: var(--green-color);
+    box-shadow: 0 4px 4px rgba(51, 51, 51, 0.25);
+    padding: 1rem 0;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+.top-menu-mobile img{
+    max-width: 50%;
+}
+
+.top-menu-desktop {
+    background-color: var(--green-color);
+    box-shadow: 0 4px 4px rgba(51, 51, 51, 0.25);
+    padding: 1rem 3rem;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 1;
+}
+
+.top-menu-desktop img{
+    max-width: 90%;
+}
+
+.top-nav-desktop ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-nav-desktop li {
+    display: inline;
+    margin-left: 20px; /* Espace between menu items */
+}
+
+.top-nav-desktop a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.top-nav-desktop a:hover{
+    color: var(---grey-dark-color);
+    transition: 1s;
+}
+
+.top-banner{ 
+    background-image: url(/Images/pizza-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 8rem;
+}
+/*HEADER END*/
+
+/*MAIN CONTENT START*/
+
+main{
+    background-color: var(--white-color);
+    padding: 1.5rem;
+    z-index: 0;
+}
+
+.divider{
+    height: 1px;
+    background-color: var(--grey-medium-color);
+    margin: 2rem 0;
+}
+
+/*DOUGH CALCULATOR SECTION START*/
+.dough-calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.select-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+}
+
+.select-box > label{
+    font-family: var(--font-Barlow);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--grey-medium-color);
+}
+
+.select-box > select{
+    width: 100%;
+    padding: 0.7rem;
+    border: solid 1px var(--grey-medium-color);
+    border-radius: 5px;
+    background-color: var(--grey-light-color);
+    font-family: var(--font-Barlow);
+    font-size: 1rem;
+    color: var(---grey-dark-color);
+}
+
+.calculate-btn{
+    width: 100%;
+    background-color: var(--red-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-family: var(--font-Barlow);
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.calculate-btn a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+/*DOUGH CALCULATOR SECTION END*/
+
+/*INGREDIENTS SECTION START*/
+.ingredients{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.ingredients-left-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: var(--green-color);
+    padding: 2rem 1rem;
+}
+
+.ingredients-left-box h2{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.1rem;
+    
+}
+
+.ingredients-right-box{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.ingredients-right-box p{
+    font-weight: bold;
+    padding: 0.1rem;
+}
+
+.ingredients-right-box span{
+    font-weight: 400;
+}
+/*INGREDIENTS SECTION START*/
+
+/*PIZZA RECIPE SECTION START*/
+
+.recipe{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.recipe-video{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.recipe-video, video, source{
+    z-index: 0;
+}
+
+/*PIZZA RECIPE SECTION END*/
+
+/*HOW TO USE SECTION START*/
+.how-to{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.how-to-banner{
+    width: 100%;
+    height: 100px;
+    background-image: url(/Images/pizza-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1rem 0;
+}
+
+.how-to-steps{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.step{
+    box-shadow: 0 0 4px rgba(51, 51, 51, 0.25);
+    border-radius: 5px;
+    padding: 1rem;
+}
+/*HOW TO USE SECTION END*/
+
+/*BACK TO TOP BUTTON START*/
+.back-to-top{
+    text-align: center;
+    margin: 3rem 0 7rem 0;
+}
+
+.back-to-top p{
+    padding: 0.1rem;
+}
+/*BACK TO TOP BUTTON END*/
+
+/*MAIN CONTENT END*/
+
+
+/*FOOTER MOBILE START*/
+.footer-mobile{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--grey-light-color);
+    width: 100%;
+    box-sizing: border-box;
+}
+.footer-mobile-nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.7rem 1.5rem 0.5rem;
+}
+
+.footer-mobile-item{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-mobile-item img{
+    width: 20px;
+}
+.footer-mobile-item p{
+    font-size: 0.8rem;
+    padding: 0;
+}
+/*FOOTER MOBILE END*/
+
+
+/*FOOTER DESKTOP START*/
+.footer-desktop{
+    background-color: var(---grey-dark-color);
+    display: none;
+}
+
+.footer-desktop-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0 3rem;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer-desktop-logo, .footer-desktop-copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.footer-desktop-logo img{
+    width: 175px;
+}
+
+.footer-desktop-copyright p{
+    color: var(--white-color);
+    padding: 0.2rem 0;
+    font-size: 0.8rem;
+}
+/*FOOTER DESKTOP END*/
+
+/*MOBILE SIZE SETTINGS END*/
+
+
+
+/*TABLET SIZE SETTINGS START*/
+@media screen and (min-width: 768px) {
+
+    main{
+        margin: auto;
+        padding: 3rem;
+    }
+
+    .top-menu-mobile{
+        display: none;
+    }
+
+    .top-menu-desktop {
+      display: flex;
+    }
+
+    .top-banner{
+        margin-top: 4rem;
+        height: 15rem;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+    .dough-calculator, .recipe, .how-to{
+        padding-top: 4.5rem;
+    }
+
+    .how-to-steps{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .footer-desktop{
+    display: block;
+    }
+
+    .footer-mobile{
+        display: none;
+    }
+
+}
+/*TABLET SIZE SETTINGS END*/
+
+
+
+/*DESKTOP SIZE SETTINGS START*/
+@media screen and (min-width: 992px) {
+    
+    main{
+        width: 60%;
+        margin: auto;
+        padding: 3rem 8rem;
+    }
+
+    .top-banner{
+        height: 24rem;
+    }
+
+    .back-to-top{
+        margin: 3rem 0 11rem 0;
+    }
+
+    .footer-desktop-container{
+        margin: auto;
+        width: 75%;
+        padding: 0 1rem;
+    }
+    
+    .footer-desktop-logo img{
+        width: 200px;
+    }
+    
+    .footer-desktop-copyright p{
+        font-size: 1rem;
+    }
+  }
+
+  /*DESKTOP SIZE SETTINGS END*/

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dough Calculator | Authentic Italian Pizza</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Montserrat:wght@300;600&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+<!-- HEADER START -->
+    <header id="top">
+
+
+        <div class="top-menu-mobile">
+
+            <div class="top-logo-mobile">
+                <a href="#top"><img src="/Images/dough-calculator-logo-main.svg" alt="Dough Calculator Logo"></a>
+            </div>
+        </div>
+
+        <div class="top-menu-desktop">
+
+            <div class="top-logo-desktop">
+                <a href="#top"><img src="/Images/dough-calculator-logo-main.svg" alt="Dough Calculator Logo"></a>
+            </div>
+
+            <nav class="top-nav-desktop">
+                <ul>
+                    <li><a href="#calculator">Dough Calculator</a></li>
+                    <li><a href="#recipe">Pizza Recipe</a></li>
+                    <li><a href="#how-to">How to Use</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="top-banner"></div>
+    </header>
+        <!-- HEADER END -->
+
+        <!-- MAIN START -->
+    <main>
+        <!-- DOUGH CALCULATOR START -->
+        <div class="dough-calculator" id="calculator">
+
+            <h2>Dough Calculator</h2>
+                <p>Calculate the amount of ingredients to make an Authentic Italian Pizza at home.</p>
+            
+
+            <div class="select-box">
+                    <label for="pizza-size">Select the pizza size:</label>
+                    <select id="pizza-size" name="pizza-size">
+                    <option value="size-20cm">1 - Small (20cm)</option>
+                    <option value="size-25cm">2 - Medium (25cm)</option>
+                    <option value="size-30cm">3 - Large (30cm)</option>
+                    </select>
+            </div>
+
+            <div class="select-box">
+                <label for="pizza-amount">Select the number of pizzas you want:</label>
+                <select id="pizza-amount" name="pizza-amount">
+                <option value="pizza-1">01 pizza</option>
+                <option value="pizza-2">02 pizzas</option>
+                <option value="pizza-3">03 pizzas</option>
+                <option value="pizza-4">04 pizzas</option>
+                <option value="pizza-5">05 pizzas</option>
+                </select>
+            </div>
+
+            <button class="calculate-btn"><a href="#">Calculate</a></button>
+
+        </div>
+        <!-- DOUGH CALCULATOR END -->
+
+        <div class="divider"> </div>
+        
+        <!-- INGREDIENTS START -->
+        <div class="ingredients">
+            <div class="ingredients-left-box">
+                <h2>Ingre<wbr>dients</h2>
+            </div>
+
+            <div class="ingredients-right-box">
+                <p>Flour: <span>500g</span></p>
+                <p>Water: <span>250ml</span></p>
+                <p>Dry Yeast: <span>1g</span></p>
+                <p>Salt: <span>5g</span></p>
+                <p>Olive Oil: <span>10ml</span></p>
+            </div>
+        </div>
+        <!-- INGREDIENTS END -->
+
+        <div class="divider"> </div>
+
+        <!-- PIZZA RECIPE START -->
+        <div class="recipe" id="recipe">
+            <h2>Pizza Recipe</h2>
+            <p>Watch the video for the best recipe to make the Authentic Italian Pizza at home.</p>
+        
+            <video controls class="recipe-video">
+            <source src="/Images/Pizza-recipe-video.mp4" type="video/mp4">
+            Your browser doesn't support video element.
+            </video>
+        </div>
+        <!-- PIZZA RECIPE END -->
+
+        <div class="divider"> </div>
+
+        <!-- HOW TO USE START -->
+        <div class="how-to" id="how-to">
+            <h2>How to Use <wbr> Dough Calculator</h2>
+            
+            <div class="how-to-banner"> </div>
+
+            <p>To use the Dough Calculator simply follow the steps below:</p>
+
+            <div class="how-to-steps">
+                <div class="step">
+                    <h3>Select the pizza size</h3>
+                    <p>Choose between small size (20cm), medium size (25cm) or large size (30cm).</p>
+                </div>
+
+                <div class="step">
+                    <h3>Select the nº of Pizzas</h3>
+                    <p>How many pizzas do you want to make? Select the number of pizzas for you recipe.</p>
+                </div>
+
+                <div class="step">
+                    <h3>Get your Ingredients list</h3>
+                    <p>After calculate you will see the list of ingredients you need to prepare your pizzas.</p>
+                </div>
+            </div>
+        </div>
+        <!-- HOW TO USE END -->
+        
+        <!-- BACK TO TOP BUTTON START -->
+        <div class="back-to-top">
+            <a href="#top"><img src="/Images/arrow_circle_up.svg" alt="Back to Top icon"></a>
+            <p>Back to Top</p>
+        </div>
+        <!-- BACK TO TOP BUTTON END -->
+
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER MOBILE START -->
+    <footer class="footer-mobile">
+
+        <nav class="footer-mobile-nav">
+            <div class="footer-mobile-item">
+                <a href="#calculator"><img src="/Images/calculate-icon.svg" alt="Pizza Dough Calculator"></a>
+                <p>Calculator</p>
+            </div>
+
+            <div class="footer-mobile-item">
+                <a href="#recipe"><img src="/Images/Pizza Icon.svg" alt="Pizza Recipe"></a>
+                <p>Pizza Recipe</p>
+            </div>
+
+            <div class="footer-mobile-item">
+                <a href="#how-to"><img src="/Images/info-icon.svg" alt="How to Use Pizza Dough Calculator"></a>
+                <p>How To</p>
+            </div>
+        </nav>
+    </footer>
+    <!-- FOOTER MOBILE END -->
+
+
+    <!-- FOOTER DESKTOP START -->
+    <footer class="footer-desktop">
+
+        <div class="footer-desktop-container">
+        
+            <div class="footer-desktop-logo">
+                <a href="#top"><img src="/Images/dough-calculator-logo-main.svg" alt="Dough Calculator Logo"></a>
+            </div>
+            
+            <div class="footer-desktop-copyright">
+                <p>2023 © Layout and Code by:  <a href="#">Fredi Bazzan Oaigen</a></p>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- FOOTER DESKTOP END -->
+
+</body>
+</html>
