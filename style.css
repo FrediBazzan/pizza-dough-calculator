@@ -110,7 +110,7 @@ a{
 }
 
 .top-banner{ 
-    background-image: url(/Images/pizza-2.jpg);
+    background-image: url(Images/pizza-2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -257,7 +257,7 @@ main{
 .how-to-banner{
     width: 100%;
     height: 100px;
-    background-image: url(/Images/pizza-3.jpg);
+    background-image: url(Images/pizza-3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
