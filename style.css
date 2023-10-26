@@ -254,6 +254,10 @@ main{
     height: 100%;
 }
 
+.recipe h3{
+    margin: 1rem 0;
+}
+
 /*PIZZA RECIPE SECTION END*/
 
 /*HOW TO USE SECTION START*/
