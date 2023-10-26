@@ -410,7 +410,9 @@ main{
     p{
         font-size: 1.2rem;
     }
-
+    .dough-calculator, .recipe{
+        padding: 0 3rem;
+    }
     .dough-calculator, .recipe, .how-to{
         padding-top: 4.5rem;
     }
@@ -439,11 +441,15 @@ main{
         box-sizing: border-box;
         width: 60%;
         margin: auto;
-        padding: 3rem 15rem;
+        padding: 3rem 8rem;
     }
 
     .top-banner{
         height: 24rem;
+    }
+
+    .dough-calculator, .recipe{
+        padding: 0 4rem;
     }
 
     .back-to-top{
